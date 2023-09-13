@@ -3,6 +3,7 @@ library(readxl)
 library(ggplot2)
 library(dplyr)
 library(DT)
+library(rsconnect)
 
 ####Define UI####
 ui <- fluidPage(
@@ -18,8 +19,8 @@ ui <- fluidPage(
           style = "margin-bottom: 20px;"),
       numericInput("tail_factor", "Tail Factor", value = 0, step = 0.1),
       actionButton("calculate", "Calculate", style = "margin-bottom: 10px;"),
-      downloadButton("download_table", "Download Table"),
-      downloadButton("download_plot", "Download Plot")
+      div(downloadButton("download_table", "Download Table")),
+      div(downloadButton("download_plot", "Download Plot"))
     ),
     
     mainPanel(
@@ -232,3 +233,5 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
+
+

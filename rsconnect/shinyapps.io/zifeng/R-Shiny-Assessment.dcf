@@ -1,0 +1,12 @@
+name: R-Shiny-Assessment
+title: R-Shiny-Assessment
+username: zifeng
+account: zifeng
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9850652
+bundleId: 7677960
+url: https://zifeng.shinyapps.io/R-Shiny-Assessment/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
